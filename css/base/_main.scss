@@ -1,0 +1,113 @@
+.main-search{
+    display: flex;
+    &_area{
+        display: flex;
+        margin-top: 30px;
+        margin-left: 30px;
+        box-sizing: border-box;
+        height: 56px;
+            &:hover{
+            box-shadow: 0 0 10px 2px #3A63DE;
+        }
+    }
+    &_area input{
+        width: 985px;
+        height: 56px;
+        background: #F2F5FA;
+        border: none;
+        padding: 17px 46px 17px 0;
+        outline: none;
+        color: #818386;
+    }
+    &_area svg{
+        background: #F2F5FA; 
+        height: 56px;
+        padding: 0 17px;
+    }
+    & input:nth-child(3){
+        width: 56px;
+        height: 56px;
+        margin: 30px 20px;
+        background: #F2F5FA;
+        border: none;
+        padding: 17px 46px 17px 0;
+        outline: none;
+    }
+        &__Notifications ul li{
+        list-style-type: none;
+    }
+    &_setting{
+        background: #F2F5FA;
+        width: 56px;
+        height: 56px;
+        margin-top: 30px;
+        margin-left: 20px;
+        background-image: url(/img/Settings.svg);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+    &_setting:hover{
+        cursor: pointer;
+        box-shadow: 0 0 10px 2px #3A63DE;
+    }
+}
+.toggle{
+    display: none;
+    margin-top: 30px ;
+}
+.burger{
+    background: #F2F5FA;
+    padding: 19px;
+    cursor: pointer;
+    margin-left: 16px;
+    padding-left: 37px;
+    background-image: url(/img/Bell.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-search__Notifications{
+    width: 56px;
+    height: 56px;
+    margin-top: 50px;
+    & .burger:hover{
+        box-shadow: 0 0 10px 2px #3A63DE;
+    }
+}
+.main-search__Notifications .toggle:checked + .menu{
+    display: flex;
+    opacity: 1;
+    transition: all ease-in 0.3s;
+    color: white;
+    background: orange;
+}
+.main-search__Notifications .menu {
+    display: none;
+    padding: 10%;
+    list-style: none;
+
+  }
+  .menu{
+      width: 380px;
+      height: 526px;
+      margin: 20px 0 0 -305px;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+  }
+.main-search__profile{
+    width: 56px;
+    height: 56px;
+    margin-top: 50px;
+    & .burger:hover{
+        box-shadow: 0 0 10px 2px #3A63DE;
+    }
+    .main-search__profile .toggle:checked + .menu{
+        display: flex;
+        opacity: 1;
+        transition: all ease-in 0.3s;
+        color: white;
+        background: orange;
+    }
+}
